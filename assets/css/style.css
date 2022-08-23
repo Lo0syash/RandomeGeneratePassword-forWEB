@@ -71,15 +71,20 @@ html, body{
 
 nav{
     position: relative;
-    margin-left: 170px;
+    margin-left: 80px;
     line-height: 0.9rem;
 }
 
 
 
 .upper-text, .str-text, .only-alphabet, .only-number, .spec-symbols{
-    font-size: 15px;
-    color: white;
+    font-size: 35px;
+    background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+    line-height: 115px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+
 }
 
 .container-back li{
@@ -89,3 +94,68 @@ nav{
     font-family: 'Bebas Neue', cursive;
 }
 
+
+/* ----------------loader------------- */
+
+.loader-item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #454ade;
+    border-radius: 50%;
+    animation: loader 1.2s ease-out infinite;
+}
+
+.loader-item:nth-child(2)
+{
+    animation-delay: -0.8s;
+}
+
+@keyframes loader{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.loader-first{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 350px;
+    bottom: 500px;
+}
+
+.loader-second{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 350px;
+    bottom: 385px;
+}
+
+.loader-third{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 350px;
+    bottom: 270px;
+}
+
+.loader-four{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 350px;
+    bottom: 155px;
+}
+
+.loader-five{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 350px;
+    bottom: 40px;
+}
