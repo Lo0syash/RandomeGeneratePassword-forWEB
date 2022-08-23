@@ -95,6 +95,7 @@ nav{
 }
 
 
+
 /* ----------------loader------------- */
 
 .loader-item{
@@ -128,6 +129,11 @@ nav{
     bottom: 500px;
     display: none;
 }
+
+.loader-first._active{
+    display: block;
+}
+
 
 .loader-second{
     position: absolute;

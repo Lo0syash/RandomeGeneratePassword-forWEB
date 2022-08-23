@@ -1,21 +1,11 @@
+var first = document.querySelector('.upper-text');
+var firsttwo = document.querySelector('.loader-first');
 
-function visible(){
-    var as = document.querySelector('.loader-first');
-    as.style.display = 'block';
-}
-
-function visible_second(){
-
-}
-
-function visible_third(){
-
-}
-
-function visible_four(){
-
-}
-
-function visible_five(){
-
+if (first){
+first.addEventListener('click', () => {
+    firsttwo.classList.add('_active');
+    first.addEventListener('click', () => {
+        firsttwo.classList.remove('_active')
+    })
+});
 }
