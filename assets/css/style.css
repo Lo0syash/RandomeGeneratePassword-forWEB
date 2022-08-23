@@ -126,6 +126,7 @@ nav{
     height: 40px;
     left: 350px;
     bottom: 500px;
+    display: none;
 }
 
 .loader-second{
