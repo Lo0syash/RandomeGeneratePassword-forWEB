@@ -73,9 +73,12 @@ nav{
     position: relative;
     margin-left: 80px;
     line-height: 0.9rem;
+
+    -ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
 }
-
-
 
 .upper-text, .str-text, .only-alphabet, .only-number, .spec-symbols{
     font-size: 35px;
@@ -87,16 +90,86 @@ nav{
 
 }
 
-.container-back li{
-}
-
 .container-back li a {
     font-family: 'Bebas Neue', cursive;
 }
 
 
 
-/* ----------------loader------------- */
+/*-------------------------------------second block---------------------------*/
+.second-block{
+    float: right;
+    width: 900px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.second-dublicate-block{
+    position: relative;
+    left: 15px;
+    top: 25px;
+    width: 900px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.buttom-generate{
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    background-color: #454ade;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'DynaPuff', cursive;
+    top: 400px;
+    left: 380px;
+    cursor: pointer;
+    
+
+}
+
+.text-btn{
+    margin-top: 20px;
+}
+
+
+.output{
+    position: absolute;
+    font-size: 35px;
+    top: 225px;
+    left: 410px;
+}
+
+/*---------------------------------range nums--------------------------------*/
+
+.volume{
+    position: relative;
+    margin-top: 422px;
+    margin-left: 185px;
+}
+
+.num_volume{
+    font-family: 'DynaPuff', cursive;
+    position: absolute;
+    margin-top: 422px;
+    font-size: 19px;
+    margin-left: 95px;
+}
+
+/*---------------------------------images-------------------------------------*/
+.copy-icon{
+    position: relative;
+    max-width: 30px;
+    max-height: 30px;
+    cursor: pointer;
+    float: right;
+    bottom: 29px;
+    right: 300px;
+}
+/* --------------------------------loader------------------------------------ */
 
 .loader-item{
     position: absolute;
@@ -141,6 +214,12 @@ nav{
     height: 40px;
     left: 350px;
     bottom: 385px;
+    display: none;
+
+}
+
+.loader-second._active{
+    display: block;
 }
 
 .loader-third{
@@ -149,6 +228,12 @@ nav{
     height: 40px;
     left: 350px;
     bottom: 270px;
+    display: none;
+
+}
+
+.loader-third._active{
+    display: block;
 }
 
 .loader-four{
@@ -157,6 +242,12 @@ nav{
     height: 40px;
     left: 350px;
     bottom: 155px;
+    display: none;
+
+}
+
+.loader-four._active{
+    display: block;
 }
 
 .loader-five{
@@ -165,4 +256,35 @@ nav{
     height: 40px;
     left: 350px;
     bottom: 40px;
+    display: none;
+
+}
+
+.loader-five._active{
+    display: block;
+}
+
+
+/*------------------------------------advert copy---------------------------*/
+.advert{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(104, 67, 218);
+    color: white;
+    border-radius: 15px;
+    position: absolute;
+    display: none;
+    left: 1555px;
+    top: 855px;
+}
+
+.copytext{
+    margin-top: 16px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'DynaPuff', cursive;
+}
+
+.advert.active{
+    display: block;
 }
