@@ -68,6 +68,14 @@ function generate(){
     const out = document.querySelector('.output');
     var result= '';
     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    if (a == 1)
+    {
+        var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    }
+    if (b == 1)
+    {
+        var characters       = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    }
     var charactersLength = characters.length;
     for ( var i = 0; i < range.value; i++ ) {
       result += characters.charAt(Math.floor(Math.random() * 
