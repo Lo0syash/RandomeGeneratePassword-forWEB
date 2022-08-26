@@ -69,17 +69,41 @@ html, body{
     border-radius: 30px;
 }
 
-nav{
+.upper-case, .lower-case, .alphabet-case, .only-number, .special-case{
+
+    line-height: 115px;
+    width: 22px;
+    height: 30px;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+
+}
+
+.container-back label {
+    font-family: 'Bebas Neue', cursive;
+} 
+
+ nav{
     position: relative;
     margin-left: 80px;
-    line-height: 0.9rem;
-
+    line-height: 0.8rem;
+    top: 25px;
+    
     -ms-user-select: none; 
 	-moz-user-select: none; 
 	-webkit-user-select: none; 
 	user-select: none; 
 }
 
+.checkbox-text{
+    position: relative;
+    margin-left: 35px;
+    bottom: 20px;
+    font-size: 25px;
+}
+/*
 .upper-text, .str-text, .only-alphabet, .only-number, .spec-symbols{
     font-size: 35px;
     background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
@@ -92,7 +116,7 @@ nav{
 
 .container-back li a {
     font-family: 'Bebas Neue', cursive;
-}
+} */
 
 
 
@@ -127,7 +151,12 @@ nav{
     top: 400px;
     left: 380px;
     cursor: pointer;
-    
+
+
+    -ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
 
 }
 
@@ -173,6 +202,11 @@ nav{
     float: right;
     bottom: 29px;
     right: 300px;
+
+    -ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
 }
 /* --------------------------------loader------------------------------------ */
 

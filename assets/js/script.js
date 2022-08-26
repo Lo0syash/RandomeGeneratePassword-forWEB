@@ -1,20 +1,25 @@
 let a, b, c, d, e;
-
+var btn = document.querySelector('.upper-case');
+var btn2 = document.querySelector('.lower-case');
+var btn3 = document.querySelector('.alphabet-case');
+var btn4 = document.querySelector('.only-number');
+var btn5 = document.querySelector('.special-case');
+/*
 function visible(){
-    const btn = document.querySelector('.upper-text');
-    const input = document.querySelector('.loader-first');
+    var btn = document.querySelector('.upper-case');
+   const input = document.querySelector('.loader-first');
 
-    const btn2 = document.querySelector('.str-text');
+    var btn2 = document.querySelector('.lower-case');
     const input2 = document.querySelector('.loader-second');
 
-    const btn3 = document.querySelector('.only-alphabet');
+    var btn3 = document.querySelector('.alphabet-case');
     const input3 = document.querySelector('.loader-third');
 
-    const btn4 = document.querySelector('.only-number');
+    var btn4 = document.querySelector('.only-number');
     const input4 = document.querySelector('.loader-four');
 
 
-    const btn5 = document.querySelector('.spec-symbols');
+    var btn5 = document.querySelector('.special-case');
     const input5 = document.querySelector('.loader-five');
 
     btn.addEventListener('click', () =>{
@@ -44,7 +49,7 @@ function visible(){
 
 
 }
-visible()
+visible()*/
 
 const range = document.querySelector('.volume')
 
@@ -68,13 +73,18 @@ function generate(){
     const out = document.querySelector('.output');
     var result= '';
     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    if (a == 1)
+    if (btn.checked)
     {
         var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     }
-    if (b == 1)
+    else if (btn2.checked)
     {
         var characters       = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    }
+    else if (btn.checked && btn2.checked)
+    {
+        alert('Erorr')
+        var characters = ' ';
     }
     var charactersLength = characters.length;
     for ( var i = 0; i < range.value; i++ ) {
