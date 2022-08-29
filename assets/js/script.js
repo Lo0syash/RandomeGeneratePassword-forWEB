@@ -81,9 +81,20 @@ function generate(){
     {
         var characters       = 'abcdefghijklmnopqrstuvwxyz0123456789';
     }
-    else if (btn.checked && btn2.checked)
+    else if (btn3.checked)
     {
-        alert('Erorr')
+        var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    }
+    else if (btn4.checked)
+    {
+        var characters = '0123456789';
+    }
+    else if (btn5.checked)
+    {
+        var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+=-/?.,><":;{}[]\|/\/`~№'
+    }
+    else {
+        alert('Eror 001')
         var characters = ' ';
     }
     var charactersLength = characters.length;

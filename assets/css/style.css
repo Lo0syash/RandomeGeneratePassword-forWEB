@@ -54,7 +54,7 @@ html, body{
 
 .block{
     width: 500px;
-    height: 600px;
+    height: 350px;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 30px;
 }
@@ -64,7 +64,7 @@ html, body{
     left: 15px;
     top: 25px;
     width: 500px;
-    height: 600px;
+    height: 350px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 30px;
 }
@@ -90,7 +90,7 @@ html, body{
     margin-left: 80px;
     line-height: 0.8rem;
     top: 25px;
-    
+    color: wheat;
     -ms-user-select: none; 
 	-moz-user-select: none; 
 	-webkit-user-select: none; 
@@ -118,8 +118,35 @@ html, body{
     font-family: 'Bebas Neue', cursive;
 } */
 
+.ad{
+    position: relative;
+    width: 500px;
+    height: 230px;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 30px;
+    border-radius: 30px;
+}
 
+.second-ad{
+    position: relative;
+    width: 500px;
+    height: 230px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    top: 15px;
+    left: 15px;
+    font-size: 35px;
+    text-align: center;
+}
 
+.text-from-ad{
+    position: relative;
+    font-size: 35px;
+    top: 80px;
+    font-family: 'DynaPuff', cursive;
+    text-decoration: none;
+    color: white;
+}
 /*-------------------------------------second block---------------------------*/
 .second-block{
     float: right;
