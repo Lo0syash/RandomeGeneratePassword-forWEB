@@ -101,7 +101,7 @@ html, body{
     position: relative;
     margin-left: 35px;
     bottom: 20px;
-    font-size: 25px;
+    font-size: 20px;
 }
 /*
 .upper-text, .str-text, .only-alphabet, .only-number, .spec-symbols{
@@ -235,6 +235,22 @@ html, body{
 	-webkit-user-select: none; 
 	user-select: none; 
 }
+
+.btn-russian{
+    cursor: pointer;
+    float: right;
+    margin-top: 25px;
+
+    -ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.btn-ru{
+    text-decoration: none;
+}
+
 /* --------------------------------loader------------------------------------ */
 
 .loader-item{
