@@ -1,6 +1,6 @@
 /* обнуление */
 body{
-    background-color: #2d92a8;
+    background-color: #373737;
 }
 
 *,
@@ -42,6 +42,7 @@ html, body{
     text-align: center;
     position: relative;
     top: 25px;
+    color: #f4f4f4;
 }
 
 /* -----------------------------------main----------------------- */
@@ -90,7 +91,7 @@ html, body{
     margin-left: 80px;
     line-height: 0.8rem;
     top: 25px;
-    color: wheat;
+    color: #f4f4f4;
     -ms-user-select: none; 
 	-moz-user-select: none; 
 	-webkit-user-select: none; 
@@ -131,7 +132,7 @@ html, body{
     top: 80px;
     font-family: 'DynaPuff', cursive;
     text-decoration: none;
-    color: white;
+    color: #f4f4f4;
 }
 /*-------------------------------------second block---------------------------*/
 .second-block{
@@ -156,7 +157,7 @@ html, body{
     position: absolute;
     width: 150px;
     height: 60px;
-    background-color: #454ade;
+    background-color: #f4f4f4;
     text-align: center;
     border-radius: 15px;
     font-size: 20px;
@@ -199,7 +200,8 @@ html, body{
     margin-top: 422px;
     font-size: 19px;
     margin-left: 95px;
-    
+    color: #f4f4f4;
+
     -ms-user-select: none; 
 	-moz-user-select: none; 
 	-webkit-user-select: none; 
@@ -215,7 +217,7 @@ html, body{
     float: right;
     bottom: 29px;
     right: 300px;
-
+    
     -ms-user-select: none; 
 	-moz-user-select: none; 
 	-webkit-user-select: none; 
@@ -243,7 +245,7 @@ html, body{
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 3px solid #454ade;
+    border: 3px solid #f4f4f4;
     border-radius: 50%;
     animation: loader 1.2s ease-out infinite;
 }
@@ -340,8 +342,8 @@ html, body{
 .advert{
     width: 200px;
     height: 50px;
-    background-color: rgb(104, 67, 218);
-    color: white;
+    background-color: #373737;
+    color: #f4f4f4;
     border-radius: 15px;
     position: absolute;
     display: none;

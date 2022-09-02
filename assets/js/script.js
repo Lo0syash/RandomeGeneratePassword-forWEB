@@ -151,3 +151,16 @@ if (copy)
 
 
 
+///dark and light mode
+
+var btnMode = document.querySelector('.theme-mode')
+
+btnMode.addEventListener('click', () =>{
+    let theme = document.querySelector('.theme-link')
+    if (theme.getAttribute("href") == "assets/css/style.css"){
+        theme.href = "assets/css/style-light.css"
+    }
+    else
+        theme.href = "assets/css/style.css"
+
+})
