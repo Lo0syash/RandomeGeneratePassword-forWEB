@@ -43,7 +43,6 @@ html, body{
     position: relative;
     top: 25px;
 }
-
 /* -----------------------------------main----------------------- */
 .container-back{
     margin: 0 auto;
@@ -371,4 +370,49 @@ html, body{
 	-moz-user-select: none; 
 	-webkit-user-select: none; 
 	user-select: none; 
+}
+
+
+/*---------------------adaptive-------------------------------------*/
+@media only screen and (max-width: 1024px) {
+
+    .wrapper{
+        max-width: 1024px;
+    }
+    .theme-mode{
+        width: 25px;
+    }   
+    .img-ru{
+        width: 40px;
+        height: 35px;
+    }
+    .container-back{
+        max-width: 1024px;
+        max-height: 776px;
+    }
+    .block{
+        width: 500px;
+        height: 300px;
+    }
+    .dublikate-block{
+        width: 500px;
+        height: 300px;  
+    }
+    .ad{
+        width: 500px;
+        height: 250px;
+    }
+    .second-ad{
+        width: 500px;
+        height: 250px;
+    }
+    .second-block{
+        width: 450px;
+        height: 590px;
+    }
+    .second-dublicate-block{
+        left: 10px;
+        width: 450px;
+        height: 590px;
+    }
 }
