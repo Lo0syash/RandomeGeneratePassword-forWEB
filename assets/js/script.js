@@ -4,52 +4,6 @@ var btn2 = document.querySelector('.lower-case');
 var btn3 = document.querySelector('.alphabet-case');
 var btn4 = document.querySelector('.only-number');
 var btn5 = document.querySelector('.special-case');
-/*
-function visible(){
-    var btn = document.querySelector('.upper-case');
-   const input = document.querySelector('.loader-first');
-
-    var btn2 = document.querySelector('.lower-case');
-    const input2 = document.querySelector('.loader-second');
-
-    var btn3 = document.querySelector('.alphabet-case');
-    const input3 = document.querySelector('.loader-third');
-
-    var btn4 = document.querySelector('.only-number');
-    const input4 = document.querySelector('.loader-four');
-
-
-    var btn5 = document.querySelector('.special-case');
-    const input5 = document.querySelector('.loader-five');
-
-    btn.addEventListener('click', () =>{
-        input.classList.toggle('_active');
-        a= 1;
-    })
-
-    btn2.addEventListener('click', () =>{
-        input2.classList.toggle('_active');
-        b = 1;
-    })
-
-    btn3.addEventListener('click', () =>{
-        input3.classList.toggle('_active');
-        c = 1;
-    })
-
-    btn4.addEventListener('click', () =>{
-        input4.classList.toggle('_active');
-        d = 1;
-    })
-
-    btn5.addEventListener('click', () =>{
-        input5.classList.toggle('_active');
-        e = 1;
-    })
-
-
-}
-visible()*/
 
 const range = document.querySelector('.volume')
 
@@ -72,7 +26,6 @@ if (btnGenerate){
 function generate(){
     const out = document.querySelector('.output');
     var result= '';
-    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     if (btn.checked)
     {
         var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
@@ -94,8 +47,7 @@ function generate(){
         var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+=-/?.,><":;{}[]\|/\/`~№'
     }
     else {
-        alert('Eror 001')
-        var characters = ' ';
+        var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     }
     var charactersLength = characters.length;
     for ( var i = 0; i < range.value; i++ ) {
