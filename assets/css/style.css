@@ -1,8 +1,4 @@
 /* обнуление */
-body{
-    background-color: #2d92a8;
-}
-
 *,
 *::after,
 *::before{
@@ -27,25 +23,383 @@ h1,h2,h3,h4,h5,h6{
 html, body{
     height: 100%;
     line-height: 1;
+    background-color: #754EA7;
 }
-/* ///////////////////////////////////////////////////////// */
-/* wrapepr */
-.wrapper{
-    max-width: 1800px;
+
+
+/* -------popup------ */
+.hello-popup{
+    width: 100%;
+    height: 100%;
+    background-color: #646464;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 128px;
+    color: #fff;
+    line-height: 135.5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.hello-popup.active{
+    display: none;
+}
+
+.hello-popup span{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 46.5px;
+}
+
+@media (max-width: 720px) {
+    .hello-popup{
+        font-size: 80px;
+    }
+
+    .hello-popup span{
+        letter-spacing: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hello-popup{
+        font-size: 50px;
+    }
+
+    .hello-popup span{
+        letter-spacing: 20px;
+    }
+}
+/* ------header------ */
+header{
+    width: 100%;
+}
+
+.body-header{
+    max-width: 1662px;  
     margin: 0 auto;
 }
 
+nav{
+    height: 119px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo{
+    font-size: 64px;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 46.5px;
+}
+
+
+@media (max-width: 1200px) {
+    .body-header{
+        max-width: 970px;
+    }
+}
+@media (max-width: 992px) {
+    .body-header{
+        max-width: 750px;
+    }
+}
+@media (max-width: 767px) {
+    .body-header{
+        max-width: none;
+        margin: 0 30px;
+    }
+    .header-logo{
+        font-size: 35px;
+        letter-spacing: 30px;
+    }
+}
+@media (max-width:340px) {
+    .header-logo{
+        letter-spacing: 20px;
+    }
+    
+}
+
+/* ----header burger */
+.header-burger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.header-burger::after,
+.header-burger::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 5.77px;
+    border-radius: 15px;
+}
+
+.header-burger:after{   
+    top: 0;
+}
+
+.header-burger::before{ 
+    bottom: 0;
+}
+
+.header-burger span{
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 5.77px;
+    top: 9px;
+    border-radius: 15px;
+}
+
+/* ----btn theme */
+.btn-theme{
+    cursor: pointer;
+}
+/* -------main------- */
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.body-container{
+    max-width: 1487px;
+    max-height: 662px;
+}
+
+.block{
+    width: 1487px;
+    height: 662px;
+    border-radius: 55px;
+    background-color: #c0c0c0;
+}
+
+/* -----logo */
+
+.container-logo-text{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.logo-text-tool{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #ff0000;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.logo-text-name{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding-top: 27px;
+    color: #000;
+    font-size: 34px;
+}
+
+/* -----mono */
+.container-mono{
+    display: flex;
+    align-items: center;
+    padding-top: 148px;
+    padding-left: 120px
+}
+
+.textbox{
+    width: 711px;
+    height: 73px;
+    background-color: #c0c0c0;
+    border: 3px solid #000;
+}
+
+.btn-generate{
+    padding-left: 44px;
+    cursor: pointer;
+}
+
+.btn-copy{
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+/* -----length */
+.container-tool{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 54px;
+    padding-left: 120px;
+    padding-right: 150px;
+}
+
+.logo-container-length{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #000;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.container-range{
+    display: flex;
+}
+
+.container-range input{
+    margin-left: 9px;
+}
+
+.num-range{
+    width: 78px;
+    height: 52px;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+    border: .4 solid #ACACAC;
+}
+
+/* -----checkbox */
+.container-checkbox{
+    display: flex;
+}
+
+.main-container-checkbox-first{
+    display: grid;
+    padding-right: 75px;
+}
+
+.container-first-checkbox-first{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-tool{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox-tool:before{
+    content: '';
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+
+.container-first-checkbox-first div{
+    padding-left: 15px;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #870D0D;
+    box-shadow: 7 4 4 rgba(0, 0, 0, .25);
+}
+
+.container-second-check-first{
+    display: flex;
+    align-items: center;
+
+}
+
+.container-second-check-first div{
+    padding-left: 15px;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #870D0D;
+    box-shadow: 7 4 4 rgba(0, 0, 0, .25);
+}
+
+.main-container-checkbox-second{
+    display: grid;
+}
+
+.contaiener-first-checkbox-second{
+    display: flex;
+    align-items: center;
+
+}
+
+.contaiener-first-checkbox-second div{
+    padding-left: 15px;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #870D0D;
+    box-shadow: 7 4 4 rgba(0, 0, 0, .25);
+}
+
+.container-second-check-second{
+    display: flex;
+    align-items: center;
+
+}
+
+.container-second-check-second div{
+    padding-left: 15px;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #870D0D;
+    box-shadow: 7 4 4 rgba(0, 0, 0, .25);
+}
+
+/* ------footer------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .wrapper{
+    max-width: 1800px;
+    margin: 0 auto;
+} */
+
 /* ------------------------------------header------------------ */
-.logo{
+/* .logo{
     font-family: 'Silkscreen', cursive;
     font-size: 35px;
     text-align: center;
     position: relative;
     top: 25px;
-}
+} */
 
 /* -----------------------------------main----------------------- */
-.container-back{
+/* .container-back{
     margin: 0 auto;
     margin-top: 120px;
     max-width: 1500px;
@@ -132,9 +486,9 @@ html, body{
     font-family: 'DynaPuff', cursive;
     text-decoration: none;
     color: white;
-}
+} */
 /*-------------------------------------second block---------------------------*/
-.second-block{
+/* .second-block{
     float: right;
     width: 900px;
     height: 600px;
@@ -183,11 +537,11 @@ html, body{
     font-size: 35px;
     top: 225px;
     left: 410px;
-}
+} */
 
 /*---------------------------------range nums--------------------------------*/
 
-.volume{
+/* .volume{
     position: relative;
     margin-top: 422px;
     margin-left: 185px;
@@ -204,10 +558,10 @@ html, body{
 	-moz-user-select: none; 
 	-webkit-user-select: none; 
 	user-select: none; 
-}
+} */
 
 /*---------------------------------images-------------------------------------*/
-.copy-icon{
+/* .copy-icon{
     position: relative;
     max-width: 30px;
     max-height: 30px;
@@ -235,11 +589,11 @@ html, body{
 
 .btn-ru{
     text-decoration: none;
-}
+} */
 
 /* --------------------------------loader------------------------------------ */
 
-.loader-item{
+/* .loader-item{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -333,11 +687,11 @@ html, body{
 
 .loader-five._active{
     display: block;
-}
+} */
 
 
 /*------------------------------------advert copy---------------------------*/
-.advert{
+/* .advert{
     width: 200px;
     height: 50px;
     background-color: rgb(104, 67, 218);
@@ -358,10 +712,10 @@ html, body{
 
 .advert.active{
     display: block;
-}
+} */
 
 /*-------------------------------theme------------------------------*/
-.theme-mode{
+/* .theme-mode{
     position: relative;
     float: right;
     margin-top: 25px;
@@ -371,4 +725,4 @@ html, body{
 	-moz-user-select: none; 
 	-webkit-user-select: none; 
 	user-select: none; 
-}
+} */
