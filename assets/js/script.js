@@ -28,10 +28,19 @@ else{
 }
 
 
-const num = document.querySelector('.num');
-const symbols = document.querySelector('.symbols');
-const upper = document.querySelector('.upper');
-const lower = document.querySelector('.lower');
+const num = document.querySelector('.checkbox-num');
+const symbols = document.querySelector('.checkbox-sym');
+const upper = document.querySelector('.checkbox-upper');
+const lower = document.querySelector('.checkbox-lower');
+
+const label_num = document.querySelector('.num');
+const label_sym = document.querySelector('.sym');
+const label_upper = document.querySelector('.upper');
+const label_lower= document.querySelector('.lower');
+
+
+
+
 
 const out = document.querySelector(".output");
 
@@ -44,20 +53,21 @@ if(range){
   })
 }
 
+
 const btn_generate = document.querySelector('.icon-generate').addEventListener('click', () =>{
   var result = "";
   const out = document.querySelector('.textbox');
-  // if (upper.checked) {
-  //     var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-  // } else if (lower.checked) {
-  //     var characters = "abcdefghijklmnopqrstuvwxyz0123456789";
-  // }  else if (num.checked) {
-  //     var characters = "0123456789";
-  // } else if (symbols.checked) {
-  //     var characters = "!@#$%^&*()_+=-/?.,><:;{}[]|//`~№";
-  // } else {
+  if (upper.checked) {
+      var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  } else if (lower.checked) {
+      var characters = "abcdefghijklmnopqrstuvwxyz0123456789";
+  }  else if (num.checked) {
+      var characters = "0123456789";
+  } else if (symbols.checked) {
+      var characters = "!@#$%^&*()_+=-/?.,><:;{}[]|//`~№";
+  } else {
       var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  // }
+  }
     var charactersLength = characters.length;
   for (var i = 0; i < range.value; i++) {
     result += characters.charAt(Math.floor(Math.random() * charactersLength));
