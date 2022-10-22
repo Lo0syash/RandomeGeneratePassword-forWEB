@@ -214,13 +214,20 @@ nav{
 @media (max-width: 767px) {
     .body-container{
         max-width: none;
+        height: 1000px;
     }
-    .container{
-        max-width: none;
-        display: grid;
+
+    .block{
+        max-width:500px; 
+        height: 830px;
     }
 }
 
+@media (max-width:500px) {
+    .block{
+        width: 0;
+    }
+}
 /* -----logo */
 
 .container-logo-text{
@@ -244,12 +251,47 @@ nav{
     font-size: 34px;
 }
 
+@media (max-width: 767px) {
+    .logo-text-tool{
+        font-size: 35px;
+    }
+    .logo-text-name{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo-text-tool{
+        font-size: 20px;
+    }
+    .logo-text-name{
+        font-size: 17px;
+    }
+}
+
 /* -----mono */
 .container-mono{
     display: flex;
     align-items: center;
     padding-top: 148px;
     padding-left: 120px
+}
+
+@media (max-width:767px) {
+    .container-mono{
+        display: grid;
+        justify-content: center;
+        padding-left: 0px;
+    }   
+
+    .container-btn{
+        justify-content: center;
+        padding-top: 25px;
+    }
+}
+
+.container-btn{
+    display: flex;
 }
 
 .textbox{
@@ -285,6 +327,12 @@ nav{
     transition: .5s;
 }
 
+@media (max-width:767px) {
+    .btn-generate{
+        margin-left: 0px;   
+    }   
+}
+
 .btn-generate:hover{
     transform: rotate(-90deg);
 }
@@ -302,6 +350,16 @@ nav{
     padding-top: 54px;
     padding-left: 120px;
     padding-right: 150px;
+}
+
+@media (max-width: 767px) {
+    .container-tool{
+        display: grid;
+        justify-content: center;
+    }
+    .conntainer-checkbox{
+        padding-top: 50px;
+    }
 }
 
 .logo-container-length{
@@ -344,8 +402,25 @@ nav{
 	user-select: none; 
 }
 
+@media (max-width: 767px) {
+    .container-checkbox{
+        display: grid;
+        justify-content: center;
+        padding-top: 25px;
+    }
+}
+
 .body-container-checkbox{
     display: flex;
+}
+
+@media (max-width: 767px) {
+    .body-container-checkbox{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        padding-top: 5px;
+    }
 }
 
 .main-first-block-checkbox{
@@ -366,6 +441,7 @@ nav{
 .num, .sym, .upper, .lower{
     cursor: pointer;
     transition: .8s;
+    padding-top: 15px;
 }
 
 .num:hover, .sym:hover, .upper:hover, .lower:hover{
@@ -383,6 +459,12 @@ nav{
     }
 }
 
+@media (max-width:767px) {
+    .main-first-block-checkbox,
+    .main-second-block-checkbox{
+        font-size: 25px;
+    }
+}
 
 
 /* .main-container-checkbox-first{
@@ -582,12 +664,16 @@ footer{
 
 @media (max-width: 992px) {
     footer{
-        padding-top: 20px;
+        padding-top: 35px;
     }
 }
 @media (max-width: 767px) {
     .body-container{
         max-width: none;
+    }
+    footer{
+        padding-top: 250px;
+        padding-bottom: 55px;
     }
 }
 
