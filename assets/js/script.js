@@ -1,19 +1,29 @@
 // --------modale window in start
 
+const main = document.querySelector('.main');
+const header = document.querySelector('.header');
+const footer = document.querySelector('.footer');
+
+
 if (localStorage.getItem('number') == null){
   function broke(){
     const popup = document.querySelector('.hello-popup').classList.add('active')
     const block = 1;
     localStorage.setItem('number', block)
+    main.classList.remove('active')
+    header.classList.remove('active')
+    footer.classList.remove('active')
   }
-  
+
   setTimeout(broke, 3000)
 }
 
 else{
   const popup = document.querySelector('.hello-popup');
   popup.style.cssText = 'display: none;'
-
+  main.classList.remove('active')
+  header.classList.remove('active')
+  footer.classList.remove('active')
   console.log("exit")
 }
 
@@ -37,17 +47,17 @@ if(range){
 const btn_generate = document.querySelector('.icon-generate').addEventListener('click', () =>{
   var result = "";
   const out = document.querySelector('.textbox');
-  if (upper.checked) {
-      var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-  } else if (lower.checked) {
-      var characters = "abcdefghijklmnopqrstuvwxyz0123456789";
-  }  else if (num.checked) {
-      var characters = "0123456789";
-  } else if (symbols.checked) {
-      var characters = "!@#$%^&*()_+=-/?.,><:;{}[]|//`~№";
-  } else {
+  // if (upper.checked) {
+  //     var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  // } else if (lower.checked) {
+  //     var characters = "abcdefghijklmnopqrstuvwxyz0123456789";
+  // }  else if (num.checked) {
+  //     var characters = "0123456789";
+  // } else if (symbols.checked) {
+  //     var characters = "!@#$%^&*()_+=-/?.,><:;{}[]|//`~№";
+  // } else {
       var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  }
+  // }
     var charactersLength = characters.length;
   for (var i = 0; i < range.value; i++) {
     result += characters.charAt(Math.floor(Math.random() * charactersLength));
