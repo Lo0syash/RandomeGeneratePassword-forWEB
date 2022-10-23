@@ -827,10 +827,13 @@ footer{
 }
 
 
+
+
 @media (max-width: 992px) {
     footer{
         padding-top: 35px;
     }
+
 }
 @media (max-width: 767px) {
     .body-container{
@@ -840,6 +843,7 @@ footer{
         padding-top: 250px;
         padding-bottom: 55px;
     }
+
 }
 
 
