@@ -28,6 +28,9 @@ else{
 }
 
 
+// -----------------------------------generate
+
+
 const num = document.querySelector('.checkbox-num');
 const symbols = document.querySelector('.checkbox-sym');
 const upper = document.querySelector('.checkbox-upper');
@@ -37,9 +40,6 @@ const label_num = document.querySelector('.num');
 const label_sym = document.querySelector('.sym');
 const label_upper = document.querySelector('.upper');
 const label_lower= document.querySelector('.lower');
-
-
-
 
 
 const out = document.querySelector(".output");
@@ -74,7 +74,6 @@ const btn_generate = document.querySelector('.icon-generate').addEventListener('
   }
   
   out.innerHTML = result;
-  console.log(result);
 });
 
 
@@ -94,6 +93,43 @@ if (copy) {
     }
   };
 }
+
+
+// ----------------------------------theme
+
+const moon = document.querySelector('.moon').addEventListener('click', () =>{
+  const moon_active = document.querySelector('.btn-theme-moon').classList.add('active')
+  const sun = document.querySelector('.sun').classList.add('active')
+  const body = document.querySelector('.body').classList.add('dark');
+  const block = document.querySelector('.block').classList.add('dark');
+  const logo = document.querySelector('.logo-text-name').classList.add('dark');
+  const length = document.querySelector('.logo-container-length').classList.add('dark');
+})
+
+const sun = document.querySelector('.sun').addEventListener('click', () =>{
+  const moon_active = document.querySelector('.btn-theme-moon').classList.remove('active')
+  const sun = document.querySelector('.sun').classList.remove('active')
+  const body = document.querySelector('.body').classList.remove('dark');
+  const block = document.querySelector('.block').classList.remove('dark');
+  const logo = document.querySelector('.logo-text-name').classList.remove('dark');
+  const length = document.querySelector('.logo-container-length').classList.remove('dark');
+})
+
+
+// -------------------------------------info
+
+const btn_info = document.querySelector('.container-icon-info').addEventListener('click', () =>{
+  const info = document.querySelector('.container-info').classList.add('active');
+
+})
+
+const btn_close = document.querySelector('.btn-close-info').addEventListener('click', () => {
+  const info = document.querySelector('.container-info').classList.remove('active');
+})
+
+
+
+
 
 
 

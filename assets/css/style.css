@@ -26,6 +26,10 @@ html, body{
     background-color: #754EA7;
 }
 
+html.dark, body.dark{
+    background-color: #000;
+}
+
 
 /* -------popup------ */
 .hello-popup{
@@ -79,6 +83,7 @@ header{
 .header.active{
     display: none;
 }
+
 
 .body-header{
     max-width: 1662px;  
@@ -194,6 +199,10 @@ nav{
     background-color: #c0c0c0;
 }
 
+.block.dark{
+    background-color: rgb(95, 95, 95);
+}
+
 @media (max-width: 1200px) {
     .body-container{
         max-width: 970px;
@@ -226,7 +235,8 @@ nav{
 
 @media (max-width:500px) {
     .block{
-        width: none;
+        width: 320px;
+        border-radius: 5px;
     }
 }
 
@@ -253,6 +263,10 @@ nav{
     font-size: 34px;
 }
 
+.logo-text-name.dark{
+    color: #fff;
+}
+
 @media (max-width: 767px) {
     .logo-text-tool{
         font-size: 35px;
@@ -271,6 +285,128 @@ nav{
     }
 }
 
+/* -----btn help */
+.cotaniener-flex-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-icon-info{
+    position: absolute;
+    margin-left: 1200px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .container-icon-info{
+        margin-left: 800px;
+    }
+}
+@media (max-width: 992px) {
+    .container-icon-info{
+        right: 100px;
+    }
+}
+@media (max-width: 767px) {
+    .container-icon-info{
+        top: 320px;
+        margin-right: 33%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container-icon-info{
+        margin-right: 15%;
+    }
+}
+
+/* ------container info------ */
+.container-info{
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.97);
+    z-index: 999;
+    border-radius: 15px;
+    left: 36%;
+    top: 30%;
+}
+
+.container-info.active{
+    display: block;
+    transition: .8s;
+}
+
+.body-container-info{
+    max-width: 400px;
+    display: grid;
+    padding-left: 25px;
+}
+
+.logo-container-info{
+    color: #fff;
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+.how-work-info{
+    padding-top: 15px;
+    color: #fff;
+    line-height: 29px;
+    font-size: 22px
+}
+
+.warning-info{
+    color: rgb(255, 0, 0);
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+.text-warning-info{
+    color: rgb(255, 0, 0);
+    padding-top: 15px;
+    line-height: 29px;
+    font-size: 22px
+}
+
+.btn-close-info{
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+    .container-info{
+        left: 30%;
+    }
+}
+@media (max-width: 992px) {
+    .container-info{
+        left: 20%;
+    }
+}
+@media (max-width: 767px) {
+    .container-info{
+        left: 10%;
+        width: 400px;
+    }
+    .btn-close-info{
+        margin-left: 350px;
+    }
+}
+@media (max-width:500px) {
+    .container-info{
+        left: 3%;
+        width: 300px;
+    }
+    .btn-close-info{
+        margin-left: 260px;
+    }
+}
 /* -----mono */
 .container-mono{
     display: flex;
@@ -370,6 +506,10 @@ nav{
     color: #000;
     font-size: 30px;
     padding-bottom: 30px;
+}
+
+.logo-container-length.dark{
+    color: #fff;
 }
 
 .container-range{
@@ -479,6 +619,19 @@ nav{
     display: none;
 }
 
+
+/* -----theme */
+.btn-theme-moon.active{
+    display: none;
+}
+
+.sun.active{
+    display: block;
+}
+
+.sun{
+    display: none;
+}
 /* .main-container-checkbox-first{
     display: grid;
     padding-right: 75px;
@@ -688,8 +841,6 @@ footer{
         padding-bottom: 55px;
     }
 }
-
-
 
 
 
