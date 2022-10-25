@@ -76,6 +76,28 @@ const btn_generate = document.querySelector('.icon-generate').addEventListener('
   out.innerHTML = result;
 });
 
+const btn_generate_light = document.querySelector('.gen-light').addEventListener('click', () =>{
+  var result = "";
+  const out = document.querySelector('.textbox');
+  if (upper.checked) {
+      var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  } else if (lower.checked) {
+      var characters = "abcdefghijklmnopqrstuvwxyz0123456789";
+  }  else if (num.checked) {
+      var characters = "0123456789";
+  } else if (symbols.checked) {
+      var characters = "!@#$%^&*()_+=-/?.,><:;{}[]|//`~№";
+  } else {
+      var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  }
+    var charactersLength = characters.length;
+  for (var i = 0; i < range.value; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  
+  out.innerHTML = result;
+});
+
 
 
 
