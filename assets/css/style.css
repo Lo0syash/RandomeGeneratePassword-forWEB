@@ -520,8 +520,35 @@ nav{
 }
 
 .container-range input{
-    margin-left: 9px;
+    margin-left: 20px;
 }
+
+
+.range-lenth {
+    margin-top: 10px;
+    border-radius: 15px;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .range-lenth:hover {
+    opacity: 1;
+  }
+  
+  .range-lenth::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
 
 .num-range{
     width: 78px;
@@ -578,7 +605,7 @@ nav{
     font-size: 30px;
     font-family: 'Inter', sans-serif;
     font-weight: 900;
-    color: #870d0d;
+    color: #000;
     mix-blend-mode: normal;
     text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -590,12 +617,9 @@ nav{
 }
 
 .num:hover, .sym:hover, .upper:hover, .lower:hover{
-    color: #25870D;
+    color: rgb(255, 0, 0);
 }
 
-.num.active, .sym.active, .upper.active, .lower.active{
-    color: #25870D;
-}
 
 @media (max-width: 992px) {
     .main-first-block-checkbox,
