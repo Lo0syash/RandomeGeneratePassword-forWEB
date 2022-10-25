@@ -23,6 +23,9 @@ h1,h2,h3,h4,h5,h6{
 html, body{
     height: 100%;
     line-height: 1;
+}
+
+body{
     background-color: #754EA7;
 }
 
@@ -810,6 +813,7 @@ footer{
     align-items: center;
 }
 
+
 .footer.active{
     display: none;
 }
@@ -840,7 +844,7 @@ footer{
         max-width: none;
     }
     footer{
-        padding-top: 250px;
+        margin-top: 250px;
         padding-bottom: 55px;
     }
 

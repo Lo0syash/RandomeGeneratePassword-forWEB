@@ -113,6 +113,7 @@ const sun = document.querySelector('.sun').addEventListener('click', () =>{
   const block = document.querySelector('.block').classList.remove('dark');
   const logo = document.querySelector('.logo-text-name').classList.remove('dark');
   const length = document.querySelector('.logo-container-length').classList.remove('dark');
+
 })
 
 
