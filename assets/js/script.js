@@ -96,7 +96,7 @@ const btn_generate_light = document.querySelector('.gen-light').addEventListener
   }
   
   out.innerHTML = result;
-});
+})
 
 
 
