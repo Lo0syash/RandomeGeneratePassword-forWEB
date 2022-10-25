@@ -77,6 +77,8 @@ const btn_generate = document.querySelector('.icon-generate').addEventListener('
 });
 
 
+
+
 //---------------------------------copy password
 const copy = document.querySelector(".btn-copy");
 
@@ -104,6 +106,20 @@ const moon = document.querySelector('.moon').addEventListener('click', () =>{
   const block = document.querySelector('.block').classList.add('dark');
   const logo = document.querySelector('.logo-text-name').classList.add('dark');
   const length = document.querySelector('.logo-container-length').classList.add('dark');
+  const num = document.querySelector('.num').classList.add('dark');
+  const sym = document.querySelector('.sym').classList.add('dark');
+  const upper = document.querySelector('.upper').classList.add('dark');
+  const lower = document.querySelector('.lower').classList.add('dark');
+
+  const black = document.querySelector('.black').classList.add('nope');
+  const light = document.querySelector('.light').classList.add('nope');
+
+  const gen_black = document.querySelector('.gen-black').classList.add('nope');
+  const gen_light = document.querySelector('.gen-light').classList.add('nope');
+
+  const icon_black_copy = document.querySelector('.icon-black-copy').classList.add('nope');
+  const icon_light_copy = document.querySelector('.icon-light-copy').classList.add('nope');
+
 })
 
 const sun = document.querySelector('.sun').addEventListener('click', () =>{
@@ -114,6 +130,11 @@ const sun = document.querySelector('.sun').addEventListener('click', () =>{
   const logo = document.querySelector('.logo-text-name').classList.remove('dark');
   const length = document.querySelector('.logo-container-length').classList.remove('dark');
 
+  const gen_black = document.querySelector('.gen-black').classList.remove('nope');
+  const gen_light = document.querySelector('.gen-light').classList.remove('nope');
+
+  const icon_black_copy = document.querySelector('.icon-black-copy').classList.remove('nope');
+  const icon_light_copy = document.querySelector('.icon-light-copy').classList.remove('nope');
 })
 
 
