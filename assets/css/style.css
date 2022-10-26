@@ -83,8 +83,17 @@ html.dark, body.dark{
 header{
     width: 100%;
 }
+.header{
+    transition: .5s;
+}
 .header.active{
     display: none;
+}
+
+.header.break{
+    z-index: 5;
+    opacity: .2;
+    color: #000;
 }
 
 
@@ -188,6 +197,13 @@ nav{
     width: 100%;
     display: flex;
     justify-content: center;
+    transition: .5s;
+}
+
+.container.break{
+    z-index: 5;
+    opacity: .2;
+    color: #000;
 }
 
 .body-container{
@@ -738,6 +754,16 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer{
+    transition: .5s;
+}
+
+.footer.break{
+    z-index: 5;
+    opacity: .2;
+    color: #000;
 }
 
 

@@ -164,9 +164,14 @@ const sun = document.querySelector('.sun').addEventListener('click', () =>{
 
 const btn_info = document.querySelector('.container-icon-info').addEventListener('click', () =>{
   const info = document.querySelector('.container-info').classList.add('active');
-
+  const break_header = document.querySelector('.header').classList.add('break')
+  const brek_main = document.querySelector('.container').classList.add('break')
+  const break_footer = document.querySelector('.footer').classList.add('break')
 })
 
 const btn_close = document.querySelector('.btn-close-info').addEventListener('click', () => {
   const info = document.querySelector('.container-info').classList.remove('active');
+  const break_header = document.querySelector('.header').classList.remove('break')
+  const brek_main = document.querySelector('.container').classList.remove('break')
+  const break_footer = document.querySelector('.footer').classList.remove('break')
 })
