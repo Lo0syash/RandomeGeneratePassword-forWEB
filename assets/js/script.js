@@ -48,8 +48,10 @@ const range = document.querySelector('.range-lenth');
 
 if(range){
   range.addEventListener("input", () =>{
-    const numer = document.querySelector(".num-range");
+    const numer = document.querySelector('.num-range');
+    const numer_phone = document.querySelector('.num-range-phone')
     numer.innerHTML = range.value;
+    numer_phone.innerHTML = range.value;
   })
 }
 
@@ -132,6 +134,7 @@ const moon = document.querySelector('.moon').addEventListener('click', () =>{
   const sym = document.querySelector('.sym').classList.add('dark');
   const upper = document.querySelector('.upper').classList.add('dark');
   const lower = document.querySelector('.lower').classList.add('dark');
+  const phone_num = document.querySelector('.num-range-phone').classList.add('dark');
 
   const black = document.querySelector('.black').classList.add('nope');
   const light = document.querySelector('.light').classList.add('nope');
@@ -151,6 +154,11 @@ const sun = document.querySelector('.sun').addEventListener('click', () =>{
   const block = document.querySelector('.block').classList.remove('dark');
   const logo = document.querySelector('.logo-text-name').classList.remove('dark');
   const length = document.querySelector('.logo-container-length').classList.remove('dark');
+  const num = document.querySelector('.num').classList.remove('dark');
+  const sym = document.querySelector('.sym').classList.remove('dark');
+  const upper = document.querySelector('.upper').classList.remove('dark');
+  const lower = document.querySelector('.lower').classList.remove('dark');
+  const phone_num = document.querySelector('.num-range-phone').classList.remove('dark');
 
   const gen_black = document.querySelector('.gen-black').classList.remove('nope');
   const gen_light = document.querySelector('.gen-light').classList.remove('nope');

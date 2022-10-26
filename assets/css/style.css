@@ -640,12 +640,28 @@ nav{
     padding-top: 8px;
 }
 
+.num-range-phone{
+    display: none;
+}
+
 @media (max-width: 767px) {
     .logo-container-length{
         text-align: center;
     }
     .num-range{
         display: none;
+    }
+    .num-range-phone{
+        display: block;
+        padding: 5px;
+        color:#000;
+        font-weight: 600;
+        font-size: 35px;
+        margin-left: 5px;
+    }
+
+    .num-range-phone.dark{
+        color: #fff;
     }
 
 }
